@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--=============== FAVICON ===============-->
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon" class="favicon">
+
+    <!--=============== REMIX ICONS ===============-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!--=============== SWIPER CSS ===============-->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/myCustom.css">
+
+    <title>كارجو لخدمات الليموزين</title>
+</head>
+<style>
+    .cbh-phone {
+    display: block;
+    position: fixed;
+    /* left: -50px; */
+    right: 0px;
+    margin-right: 44px;
+    float: right;
+    bottom: 54px;
+    visibility: hidden;
+    background-color: transparent;
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    z-index: 999;
+    -webkit-backface-visibility: hidden;
+    -webkit-transform: translateZ(0);
+    -webkit-transition: visibility .5s;
+    -moz-transition: visibility .5s;
+    -o-transition: visibility .5s;
+    transition: visibility .5s;
+} .cbh-phone.cbh-show{visibility:visible}@-webkit-keyframes fadeInRight{0%{opacity:0;-webkit-transform:translate3d(100%,0,0);transform:translate3d(100%,0,0)}100%{opacity:1;-webkit-transform:none;transform:none}}@keyframes fadeInRight{0%{opacity:0;-webkit-transform:translate3d(100%,0,0);-ms-transform:translate3d(100%,0,0);transform:translate3d(100%,0,0)}100%{opacity:1;-webkit-transform:none;-ms-transform:none;transform:none}}@-webkit-keyframes fadeInRightBig{0%{opacity:0;-webkit-transform:translate3d(2000px,0,0);transform:translate3d(2000px,0,0)}100%{opacity:1;-webkit-transform:none;transform:none}}@-webkit-keyframes fadeOutRight{0%{opacity:1}100%{opacity:0;-webkit-transform:translate3d(100%,0,0);transform:translate3d(100%,0,0)}}@keyframes fadeOutRight{0%{opacity:1}100%{opacity:0;-webkit-transform:translate3d(100%,0,0);-ms-transform:translate3d(100%,0,0);transform:translate3d(100%,0,0)}}.fadeOutRight{-webkit-animation-name:fadeOutRight;animation-name:fadeOutRight}
+  .cbh-phone.cbh-static1{opacity:.6}
+  .cbh-phone.cbh-hover1{opacity:1}
+  .cbh-ph-circle{width:110px;height:110px;top:40px;left:40px;position:absolute;background-color:transparent;-webkit-border-radius:100%;-moz-border-radius:100%;border-radius:100%;border:2px solid rgba(30,30,30,.4);opacity:.1;-webkit-animation:cbh-circle-anim 1.2s infinite ease-in-out;-moz-animation:cbh-circle-anim 1.2s infinite ease-in-out;-ms-animation:cbh-circle-anim 1.2s infinite ease-in-out;-o-animation:cbh-circle-anim 1.2s infinite ease-in-out;animation:cbh-circle-anim 1.2s infinite ease-in-out;-webkit-transition:all .5s;-moz-transition:all .5s;-o-transition:all .5s;transition:all .5s}
+  .cbh-phone.cbh-active .cbh-ph-circle1{-webkit-animation:cbh-circle-anim 1.1s infinite ease-in-out!important;-moz-animation:cbh-circle-anim 1.1s infinite ease-in-out!important;-ms-animation:cbh-circle-anim 1.1s infinite ease-in-out!important;-o-animation:cbh-circle-anim 1.1s infinite ease-in-out!important;animation:cbh-circle-anim 1.1s infinite ease-in-out!important}
+  .cbh-phone.cbh-static .cbh-ph-circle{-webkit-animation:cbh-circle-anim 2.2s infinite ease-in-out!important;-moz-animation:cbh-circle-anim 2.2s infinite ease-in-out!important;-ms-animation:cbh-circle-anim 2.2s infinite ease-in-out!important;-o-animation:cbh-circle-anim 2.2s infinite ease-in-out!important;animation:cbh-circle-anim 2.2s infinite ease-in-out!important}
+  .cbh-phone.cbh-hover .cbh-ph-circle{border-color:rgba(0,175,242,1);opacity:.5}
+  .cbh-phone.cbh-green.cbh-hover .cbh-ph-circle{border-color:rgba(117,235,80,1);opacity:.5}
+  .cbh-phone.cbh-green .cbh-ph-circle{border-color:rgba(0,175,242,1);opacity:.5}
+  .cbh-phone.cbh-gray.cbh-hover .cbh-ph-circle{border-color:rgba(204,204,204,1);opacity:.5}
+  .cbh-phone.cbh-gray .cbh-ph-circle{border-color:rgba(117,235,80,1);opacity:.5}
+  .cbh-ph-circle-fill{width:74px;height:74px;top:58px;left:58px;position:absolute;background-color:#000;-webkit-border-radius:100%;-moz-border-radius:100%;border-radius:100%;border:2px solid transparent;opacity:.1;-webkit-animation:cbh-circle-fill-anim 2.3s infinite ease-in-out;-moz-animation:cbh-circle-fill-anim 2.3s infinite ease-in-out;-ms-animation:cbh-circle-fill-anim 2.3s infinite ease-in-out;-o-animation:cbh-circle-fill-anim 2.3s infinite ease-in-out;animation:cbh-circle-fill-anim 2.3s infinite ease-in-out;-webkit-transition:all .5s;-moz-transition:all .5s;-o-transition:all .5s;transition:all .5s}
+  .cbh-phone.cbh-active .cbh-ph-circle-fill{-webkit-animation:cbh-circle-fill-anim 1.7s infinite ease-in-out!important;-moz-animation:cbh-circle-fill-anim 1.7s infinite ease-in-out!important;-ms-animation:cbh-circle-fill-anim 1.7s infinite ease-in-out!important;-o-animation:cbh-circle-fill-anim 1.7s infinite ease-in-out!important;animation:cbh-circle-fill-anim 1.7s infinite ease-in-out!important}
+  .cbh-phone.cbh-static .cbh-ph-circle-fill{-webkit-animation:cbh-circle-fill-anim 2.3s infinite ease-in-out!important;-moz-animation:cbh-circle-fill-anim 2.3s infinite ease-in-out!important;-ms-animation:cbh-circle-fill-anim 2.3s infinite ease-in-out!important;-o-animation:cbh-circle-fill-anim 2.3s infinite ease-in-out!important;animation:cbh-circle-fill-anim 2.3s infinite ease-in-out!important;opacity:0!important}         .cbh-phone.cbh-hover .cbh-ph-circle-fill{background-color:rgba(0,175,242,.5);opacity:.75!important}
+  .cbh-phone.cbh-green.cbh-hover .cbh-ph-circle-fill{background-color:rgba(117,235,80,.5);opacity:.75!important}
+  .cbh-phone.cbh-green .cbh-ph-circle-fill{background-color:rgba(0,175,242,.5);opacity:.75!important}
+  .cbh-phone.cbh-gray.cbh-hover .cbh-ph-circle-fill{background-color:rgba(204,204,204,.5);opacity:.75!important}
+  .cbh-phone.cbh-gray .cbh-ph-circle-fill{background-color:rgba(117,235,80,.5);opacity:1!important}
+  .cbh-ph-img-circle1{width:50px;height:50px;top:70px;left:70px;position:absolute;background-image:url(https://360imagem.com/google/images/wpp-icon.png);background-size: 40px 40px;background-color:rgba(30,30,30,.1);background-position:center center;background-repeat:no-repeat;-webkit-border-radius:100%;-moz-border-radius:100%;border-radius:100%;border:2px solid transparent;opacity:1;-webkit-animation:cbh-circle-img-anim 1s infinite ease-in-out;-moz-animation:cbh-circle-img-anim 1s infinite ease-in-out;-ms-animation:cbh-circle-img-anim 1s infinite ease-in-out;-o-animation:cbh-circle-img-anim 1s infinite ease-in-out;animation:cbh-circle-img-anim 1s infinite ease-in-out}
+  .cbh-phone.cbh-active .cbh-ph-img-circle1{-webkit-animation:cbh-circle-img-anim 1s infinite ease-in-out!important;-moz-animation:cbh-circle-img-anim 1s infinite ease-in-out!important;-ms-animation:cbh-circle-img-anim 1s infinite ease-in-out!important;-o-animation:cbh-circle-img-anim 1s infinite ease-in-out!important;animation:cbh-circle-img-anim 1s infinite ease-in-out!important}
+  .cbh-phone.cbh-static .cbh-ph-img-circle1{-webkit-animation:cbh-circle-img-anim 0s infinite ease-in-out!important;-moz-animation:cbh-circle-img-anim 0s infinite ease-in-out!important;-ms-animation:cbh-circle-img-anim 0s infinite ease-in-out!important;-o-animation:cbh-circle-img-anim 0s infinite ease-in-out!important;animation:cbh-circle-img-anim 0s infinite ease-in-out!important}
+  .cbh-phone.cbh-hover .cbh-ph-img-circle1{background-color:rgba(0,175,242,1)}
+  .cbh-phone.cbh-green.cbh-hover .cbh-ph-img-circle1:hover{background-color:rgba(117,235,80,1)}
+  .cbh-phone.cbh-green .cbh-ph-img-circle1{background-color:rgba(0,175,242,1)}
+  .cbh-phone.cbh-green .cbh-ph-img-circle1{background-color:rgba(0,175,242,1)}
+  .cbh-phone.cbh-gray.cbh-hover .cbh-ph-img-circle1{background-color:rgba(204,204,204,1)}
+  .cbh-phone.cbh-gray .cbh-ph-img-circle1{background-color:rgba(117,235,80,1)}@-moz-keyframes cbh-circle-anim{0%{-moz-transform:rotate(0deg) scale(0.5) skew(1deg);opacity:.1;-moz-opacity:.1;-webkit-opacity:.1;-o-opacity:.1}30%{-moz-transform:rotate(0deg) scale(.7) skew(1deg);opacity:.5;-moz-opacity:.5;-webkit-opacity:.5;-o-opacity:.5}100%{-moz-transform:rotate(0deg) scale(1) skew(1deg);opacity:.6;-moz-opacity:.6;-webkit-opacity:.6;-o-opacity:.1}}@-webkit-keyframes cbh-circle-anim{0%{-webkit-transform:rotate(0deg) scale(0.5) skew(1deg);-webkit-opacity:.1}30%{-webkit-transform:rotate(0deg) scale(.7) skew(1deg);-webkit-opacity:.5}100%{-webkit-transform:rotate(0deg) scale(1) skew(1deg);-webkit-opacity:.1}}@-o-keyframes cbh-circle-anim{0%{-o-transform:rotate(0deg) kscale(0.5) skew(1deg);-o-opacity:.1}30%{-o-transform:rotate(0deg) scale(.7) skew(1deg);-o-opacity:.5}100%{-o-transform:rotate(0deg) scale(1) skew(1deg);-o-opacity:.1}}@keyframes cbh-circle-anim{0%{transform:rotate(0deg) scale(0.5) skew(1deg);opacity:.1}30%{transform:rotate(0deg) scale(.7) skew(1deg);opacity:.5}100%{transform:rotate(0deg) scale(1) skew(1deg);opacity:.1}}@-moz-keyframes cbh-circle-fill-anim{0%{-moz-transform:rotate(0deg) scale(0.7) skew(1deg);opacity:.2}50%{-moz-transform:rotate(0deg) -moz-scale(1) skew(1deg);opacity:.2}100%{-moz-transform:rotate(0deg) scale(0.7) skew(1deg);opacity:.2}}@-webkit-keyframes cbh-circle-fill-anim{0%{-webkit-transform:rotate(0deg) scale(0.7) skew(1deg);opacity:.2}50%{-webkit-transform:rotate(0deg) scale(1) skew(1deg);opacity:.2}100%{-webkit-transform:rotate(0deg) scale(0.7) skew(1deg);opacity:.2}}@-o-keyframes cbh-circle-fill-anim{0%{-o-transform:rotate(0deg) scale(0.7) skew(1deg);opacity:.2}50%{-o-transform:rotate(0deg) scale(1) skew(1deg);opacity:.2}100%{-o-transform:rotate(0deg) scale(0.7) skew(1deg);opacity:.2}}@keyframes cbh-circle-fill-anim{0%{transform:rotate(0deg) scale(0.7) skew(1deg);opacity:.2}50%{transform:rotate(0deg) scale(1) skew(1deg);opacity:.2}100%{transform:rotate(0deg) scale(0.7) skew(1deg);opacity:.2}}@keyframes cbh-circle-img-anim{0%{transform:rotate(0deg) scale(1) skew(1deg)}10%{transform:rotate(-25deg) scale(1) skew(1deg)}20%{transform:rotate(25deg) scale(1) skew(1deg)}30%{transform:rotate(-25deg) scale(1) skew(1deg)}40%{transform:rotate(25deg) scale(1) skew(1deg)}100%,50%{transform:rotate(0deg) scale(1) skew(1deg)}}@-moz-keyframes cbh-circle-img-anim{0%{transform:rotate(0deg) scale(1) skew(1deg)}10%{-moz-transform:rotate(-25deg) scale(1) skew(1deg)}20%{-moz-transform:rotate(25deg) scale(1) skew(1deg)}30%{-moz-transform:rotate(-25deg) scale(1) skew(1deg)}40%{-moz-transform:rotate(25deg) scale(1) skew(1deg)}100%,50%{-moz-transform:rotate(0deg) scale(1) skew(1deg)}}@-webkit-keyframes cbh-circle-img-anim{0%{-webkit-transform:rotate(0deg) scale(1) skew(1deg)}10%{-webkit-transform:rotate(-25deg) scale(1) skew(1deg)}20%{-webkit-transform:rotate(25deg) scale(1) skew(1deg)}30%{-webkit-transform:rotate(-25deg) scale(1) skew(1deg)}40%{-webkit-transform:rotate(25deg) scale(1) skew(1deg)}100%,50%{-webkit-transform:rotate(0deg) scale(1) skew(1deg)}}@-o-keyframes cbh-circle-img-anim{0%{-o-transform:rotate(0deg) scale(1) skew(1deg)}10%{-o-transform:rotate(-25deg) scale(1) skew(1deg)}20%{-o-transform:rotate(25deg) scale(1) skew(1deg)}30%{-o-transform:rotate(-25deg) scale(1) skew(1deg)}40%{-o-transform:rotate(25deg) scale(1) skew(1deg)}100%,50%{-o-transform:rotate(0deg) scale(1) skew(1deg)}}
+  .cbh-ph-img-circle1 {}
+  .cbh-phone.cbh-green .cbh-ph-circle {border-color: rgb(0, 242, 164)}
+  .cbh-phone.cbh-green .cbh-ph-circle-fill {background-color: rgb(0, 242, 164);}
+  .cbh-phone.cbh-green .cbh-ph-img-circle1 {background-color:rgb(46, 203, 113);}
+
+  .kmacb__manager-border {
+    position: absolute;
+    width: 75px;
+    height: 75px;
+    top: 50%;
+    left: 50%;
+    margin-top: -39.5px;
+    margin-left: -39.5px;
+    border-radius: 100%;
+    border: 2px solid #ffe787;
+    -webkit-animation: kmacb__manager-border-anim 1.5s ease-in-out .5s infinite;
+    -moz-animation: kmacb__manager-border-anim 1.5s ease-in-out .5s infinite;
+    -ms-animation: kmacb__manager-border-anim 1.5s ease-in-out .5s infinite;
+    -o-animation: kmacb__manager-border-anim 1.5s ease-in-out .5s infinite;
+    animation: kmacb__manager-border-anim 1.5s ease-in-out .5s infinite;
+    opacity: .8;
+    transform-origin: center;
+  }
+  .kmacb__manager-fill {
+    background: #52aff7 center bottom no-repeat;
+    position: absolute;
+    width: 75px;
+    height: 75px;
+    top: 50%;
+    left: 50%;
+    margin-top: -37.5px;
+    margin-left: -37.5px;
+    border-radius: 100%;
+    opacity: .5;
+    -webkit-animation: kmacb__manager-fill-anim 1.5s ease-in-out infinite;
+    -moz-animation: kmacb__manager-fill-anim 1.5s ease-in-out infinite;
+    -ms-animation: kmacb__manager-fill-anim 1.5s ease-in-out infinite;
+    -o-animation: kmacb__manager-fill-anim 1.5s ease-in-out infinite;
+    animation: kmacb__manager-fill-anim 1.5s ease-in-out infinite;
+    transform-origin: center;
+  }
+  .kmacb__manager-circle {
+    background: #52aff7;
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    top: 50%;
+    left: 50%;
+    margin-top: -60px;
+    margin-left: -60px;
+    border-radius: 100%;
+  }
+</style>
+<body>
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="" class="nav__logo">
+                <!-- <i class="ri-steering-fill"></i> -->
+                <img src="../logo.png" alt="" class="loogo" style="height: 58px;">
+                CarGo
+            </a>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active-link">الرئيسية</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link ">عنا</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#popular" class="nav__link">سيارات مميزة</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#featured" class="nav__link">متميز</a>
+                    </li>
+                </ul>
+
+                <div class="nav__close" id="nav-close">
+                    <i class="ri-close-line"></i>
+                </div>
+            </div>
+
+            <!-- Togglar Button -->
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="ri-menu-line"></i>
+            </div>
+
+        </nav>
+    </header>
+
+    <!--************* MAIN CODE ****************-->
+
+    <main class="main">
+        <!--==================== HOME ====================-->
+        <section class="home section" id="home">
+            <div class="shapeX shape__big"></div>
+            <div class="shapeX shape__small"></div>
+
+
+            <div class="home__container container grid">
+                <div class="home__data">
+                    <h1 class="home__title">
+                      كارجو لخدمات
+                    </h1>
+                    <h2 class="home__subtitle">
+                       الليموزين
+                       <i class="ri-flashlight-fill"></i>
+                    </h2>
+                    <!-- <h3 class="home__elec">
+                        <i class="ri-flashlight-fill"></i>
+                        
+                    </h3> -->
+                </div>
+
+                <img src="../car1.png" alt="" class="home__img">
+                <div class="home__car">
+                    <div class="home__car-data">
+                        <div class="home__car-icon">
+                            <i class="ri-temp-cold-line"></i>
+                        </div>
+                        <h2 class="home__car-number">3.0s</h2>
+                        <h3 class="home__car-name">0-100 km/h</h3>
+
+                    </div>
+
+                    <div class="home__car-data">
+                        <div class="home__car-icon">
+                            <i class="ri-dashboard-2-line"></i>
+                        </div>
+                        <h2 class="home__car-number">419</h2>
+                        <h3 class="home__car-name">POWER (KW)</h3>
+
+                    </div>
+                    <div class="home__car-data">
+                        <div class="home__car-icon">
+                            <i class="ri-flashlight-fill"></i>
+                        </div>
+                        <h2 class="home__car-number">325 km/h</h2>
+                        <h3 class="home__car-name">MAX. SPEED</h3>
+
+                    </div>
+
+                </div>
+
+                <a href="#" class="home__button">START</a>
+
+                <div class="slider__bg">
+                <div class="slider__bg-navBtn active"></div>
+                <div class="slider__bg-navBtn"></div>
+                <div class="slider__bg-navBtn"></div>
+                <div class="slider__bg-navBtn"></div>
+                <div class="slider__bg-navBtn"></div>
+                
+                </div>
+
+
+
+            </div>
+            <div class="home__social">
+                <a href="#" class="home__social-icon"><i class="ri-facebook-fill"></i></a>
+                <a href="#" class="home__social-icon"><i class="ri-instagram-fill"></i></a>
+                <a href="#" class="home__social-icon"><i class="ri-twitter-fill"></i></a>
+
+            </div>
+
+        </section>
+         <!--==================== GALLERY BANNER ====================-->
+         <section class="gallery section">
+            <div class="gallery__container container grid">
+                <video class="video__slide active" src="assets/video/vid_1.mp4" autoplay muted loop></video>
+                <video class="video__slide" src="assets/video/vid_4.mp4" autoplay muted loop></video>
+                <video class="video__slide" src="assets/video/vid_3.mp4" autoplay muted loop></video>
+                <video class="video__slide" src="assets/video/vid_2.mp4" autoplay muted loop></video>
+                <video class="video__slide" src="assets/video/vid_5.mp4" autoplay muted loop></video>
+            
+            </div>
+
+        </section>
+
+        <!--==================== ABOUT ====================-->
+        <section class="about section" id="about">
+            <div class="about__container container grid">
+                <div class="about__group">
+                    <img src="assets/img/about.png" alt="" class="about__img">
+
+                    <div class="about__card">
+                        <h3 class="about__card-title">2.500+</h3>
+                        <p class="about__card-description">Supercharges placed along popular routes</p>
+                    </div>
+                </div>
+
+                <div class="about__data">
+                    <h2 class="section__title about__title">Machines With <br> Future Technology</h2>
+                    <p class="about__description">See the future with high-performance electric cars produced by
+                        renowned brands. They feature futuristic builds and designs with
+                        new and innovative platforms that last a long time.</p>
+
+                    <a href="#" class="button">Know More</a>
+                </div>
+
+
+            </div>
+
+
+        </section>
+
+        <!--==================== POPULAR ====================-->
+        <section class="popular section" id="popular">
+            <h2 class="section__title">
+                اختار سيارتك المميزة <br> من ماركة
+            </h2>
+            <div class="popular__container container swiper">
+                <div class="swiper-wrapper">
+                    <article class="popular__card swiper-slide" style="margin-right: 24px;">
+                        <div class="shapeX shape__smaller"></div>
+
+                        <h1 class="popular__title">Porsche</h1>
+                        <h3 class="popular__subtitle">Turbo S</h3>
+
+                        <img src="../17097b38-77ce-462c-bcf1-5cfee3085886.jpg" alt="" class="popular__img">
+
+                        <div class="popular__data">
+                            <div class="popular__data-group">
+                                <i class="ri-dashboard-2-line"></i> 3.7 sec
+                            </div>
+                            <div class="popular__data-group">
+                                <i class="ri-exchange-funds-line"></i> 356 Km/h
+                            </div>
+                            <div class="popular__data-group">
+                                <i class="ri-charging-pile-2-line"></i> Electric
+                            </div>
+                        </div>
+
+                        <!-- <h3 class="popular__price">$175,900</h3> -->
+                        <button class="button popular__button">
+                            <i class="ri-shopping-bag-2-line"></i>
+                        </button>
+
+                    </article>
+
+                    <article class="popular__card swiper-slide" style="margin-right: 24px;">
+                        <div class="shapeX shape__smaller"></div>
+
+                        <h1 class="popular__title">Porsche</h1>
+                        <h3 class="popular__subtitle">Taycan</h3>
+
+                        <img src="../214df1bf-c139-4fdd-9b5c-9ab15ac8458e.jpg" alt="" class="popular__img">
+
+                        <div class="popular__data">
+                            <div class="popular__data-group">
+                                <i class="ri-dashboard-2-line"></i> 3.7 sec
+                            </div>
+                            <div class="popular__data-group">
+                                <i class="ri-exchange-funds-line"></i> 356 Km/h
+                            </div>
+                            <div class="popular__data-group">
+                                <i class="ri-charging-pile-2-line"></i> Electric
+                            </div>
+                        </div>
+
+                        <h3 class="popular__price">$114,900</h3>
+                        <button class="button popular__button">
+                            <i class="ri-shopping-bag-2-line"></i>
+                        </button>
+
+                    </article>
+
+                    <article class="popular__card swiper-slide" style="margin-right: 24px;">
+                        <div class="shapeX shape__smaller"></div>
+
+                        <h1 class="popular__title">Porsche</h1>
+                        <h3 class="popular__subtitle">Turbo S Cross</h3>
+
+                        <img src="assets/img/popular3.png" alt="" class="popular__img">
+
+                        <div class="popular__data">
+                            <div class="popular__data-group">
+                                <i class="ri-dashboard-2-line"></i> 3.7 sec
+                            </div>
+                            <div class="popular__data-group">
+                                <i class="ri-exchange-funds-line"></i> 356 Km/h
+                            </div>
+                            <div class="popular__data-group">
+                                <i class="ri-charging-pile-2-line"></i> Electric
+                            </div>
+                        </div>
+
+                        <h3 class="popular__price">$150,900</h3>
+                        <button class="button popular__button">
+                            <i class="ri-shopping-bag-2-line"></i>
+                        </button>
+
+                    </article>
+
+                    <article class="popular__card swiper-slide" style="margin-right: 24px;">
+                        <div class="shapeX shape__smaller"></div>
+
+                        <h1 class="popular__title">Porsche</h1>
+                        <h3 class="popular__subtitle">Boxster 718</h3>
+
+                        <img src="assets/img/popular4.png" alt="" class="popular__img">
+
+                        <div class="popular__data">
+                            <div class="popular__data-group">
+                                <i class="ri-dashboard-2-line"></i> 3.7 sec
+                            </div>
+                            <div class="popular__data-group">
+                                <i class="ri-exchange-funds-line"></i> 356 Km/h
+                            </div>
+                            <div class="popular__data-group">
+                                <i class="ri-charging-pile-2-line"></i> Electric
+                            </div>
+                        </div>
+
+                        <h3 class="popular__price">$125,900</h3>
+                        <button class="button popular__button">
+                            <i class="ri-shopping-bag-2-line"></i>
+                        </button>
+
+                    </article>
+
+                    <article class="popular__card swiper-slide">
+                        <div class="shapeX shape__smaller"></div>
+
+                        <h1 class="popular__title">Porsche</h1>
+                        <h3 class="popular__subtitle">Cayman</h3>
+
+                        <img src="assets/img/popular5.png" alt="" class="popular__img">
+
+                        <div class="popular__data">
+                            <div class="popular__data-group">
+                                <i class="ri-dashboard-2-line"></i> 3.7 sec
+                            </div>
+                            <div class="popular__data-group">
+                                <i class="ri-exchange-funds-line"></i> 356 Km/h
+                            </div>
+                            <div class="popular__data-group">
+                                <i class="ri-charging-pile-2-line"></i> Electric
+                            </div>
+                        </div>
+
+                        <h3 class="popular__price">$128,900</h3>
+                        <button class="button popular__button">
+                            <i class="ri-shopping-bag-2-line"></i>
+                        </button>
+
+                    </article>
+                </div>
+
+                <div class="swiper-pagination"></div>
+            </div>
+
+        </section>
+
+        <!--==================== FEATURES ====================-->
+        <section class="features section">
+            <h2 class="section__title">
+                المزيد من المزايا
+            </h2>
+
+            <div class="features__container container grid">
+                <div class="features__group">
+                    <img src="assets/img/features.png" alt="" class="features__img">
+
+
+                    <div class="features__card features__card-1">
+                        <h3 class="features__card-title">800v</h3>
+                        <p class="features__card-description">Turbo <br> Chargin</p>
+                    </div>
+
+                    <div class="features__card features__card-2">
+                        <h3 class="features__card-title">350</h3>
+                        <p class="features__card-description">Km <br> Range</p>
+                    </div>
+                    <div class="features__card features__card-3">
+                        <h3 class="features__card-title">480</h3>
+                        <p class="features__card-description">Km <br> Travel</p>
+                    </div>
+                </div>
+            </div>
+
+            <img src="assets/img/map.svg" alt="" class="features__map">
+
+        </section>
+
+        <!--==================== FEATURED ====================-->
+        <section class="featured section" id="featured">
+            <h2 class="section__title">سيارات فاخرة مميزة</h2>
+            <div class="featured__container container">
+                <ul class="featured__filters">
+                    <li>
+                        <button class="featured__item active-featured" data-filter="all">
+                            <span>الجميع</span>
+                        </button>
+                    </li>
+                    <li>
+                        <button class="featured__item" data-filter=".tesla">
+                            <img src="assets/img/logo3.png" alt="">
+
+                        </button>
+                    </li>
+                    <li>
+                        <button class="featured__item" data-filter=".audi">
+                            <img src="assets/img/logo2.png" alt="">
+                        </button>
+                    </li>
+                    <li>
+                        <button class="featured__item" data-filter=".porsche">
+                            <img src="assets/img/logo1.png" alt="">
+                        </button>
+                    </li>
+                </ul>
+
+                <div class="featured__content grid">
+
+                    <article class="featured__card mix tesla">
+                        <div class="shape shape__smaller"></div>
+
+                        <h1 class="featured__title">Tesla</h1>
+                        <h3 class="featured__subtitle">Model X</h3>
+                        <img src="assets/img/featured1.png" alt="" class="featured__img">
+                        <!-- <h3 class="featured__price">$98,900</h3> -->
+                        <button class="button featured__button">
+                            <i class="ri-shopping-bag-2-line"></i>
+                        </button>
+
+                    </article>
+                    <article class="featured__card mix tesla">
+                        <div class="shape shape__smaller"></div>
+
+                        <h1 class="featured__title">Tesla</h1>
+                        <h3 class="featured__subtitle">Model 3</h3>
+                        <img src="assets/img/featured2.png" alt="" class="featured__img">
+                        <!-- <h3 class="featured__price">$45,900</h3> -->
+                        <button class="button featured__button">
+                            <i class="ri-shopping-bag-2-line"></i>
+                        </button>
+
+                    </article>
+                    <article class="featured__card mix audi">
+                        <div class="shape shape__smaller"></div>
+
+                        <h1 class="featured__title">Audi</h1>
+                        <h3 class="featured__subtitle">E-tron</h3>
+                        <img src="assets/img/featured3.png" alt="" class="featured__img">
+                        <!-- <h3 class="featured__price">$175,900</h3> -->
+                        <button class="button featured__button">
+                            <i class="ri-shopping-bag-2-line"></i>
+                        </button>
+
+                    </article>
+                    <article class="featured__card mix porsche">
+                        <div class="shape shape__smaller"></div>
+
+                        <h1 class="featured__title">Porsche</h1>
+                        <h3 class="featured__subtitle">Boxster 987</h3>
+                        <img src="assets/img/featured4.png" alt="" class="featured__img">
+                        <!-- <h3 class="featured__price">$126,900</h3> -->
+                        <button class="button featured__button">
+                            <i class="ri-shopping-bag-2-line"></i>
+                        </button>
+
+                    </article>
+                    <article class="featured__card mix porsche">
+                        <div class="shape shape__smaller"></div>
+
+                        <h1 class="featured__title">Porsche</h1>
+                        <h3 class="featured__subtitle">Panamera</h3>
+                        <img src="assets/img/featured5.png" alt="" class="featured__img">
+                        <!-- <h3 class="featured__price">$175,900</h3> -->
+                        <button class="button featured__button">
+                            <i class="ri-shopping-bag-2-line"></i>
+                        </button>
+
+                    </article>
+
+                </div>
+            </div>
+
+        </section>
+       
+
+        <!--==================== OFFER ====================-->
+        <section class="offer section">
+
+            <div class="offer__container container grid">
+
+                <img src="assets/img/offer-bg.png" alt="" class="offer__bg">
+
+                <div class="offer__data">
+                    <h2 class="section__title offer__title">
+                        هل ترغب في تلقي
+ <br> العروض الخاصة؟
+                    </h2>
+
+                    <p class="offer__description">كن أول من يصله كافة المعلومات حول منتجاتنا والسيارات الجديدة عبر البريد الإلكتروني عن طريق الاشتراك في قائمتنا البريدية.
+
+</p>
+
+                    <a href="#" class="button"> إشترك الان</a>
+                </div>
+
+                <img src="assets/img/offer.png" alt="" class="offer__img">
+
+            </div>
+
+        </section>
+
+        <!--==================== LOGOS ====================-->
+        <section class="logos section">
+            <div class="logos__container container grid">
+                <div class="logos__content">
+                    <img src="assets/img/logo1.png" alt="" class="logos__img">
+                </div>
+                <div class="logos__content">
+                    <img src="assets/img/logo6.png" alt="" class="logos__img">
+                </div>
+                <div class="logos__content">
+                    <img src="assets/img/logo5.png" alt="" class="logos__img">
+                </div>
+                <div class="logos__content">
+                    <img src="assets/img/logo4.png" alt="" class="logos__img">
+                </div>
+                <div class="logos__content">
+                    <img src="assets/img/logo3.png" alt="" class="logos__img">
+                </div>
+                <div class="logos__content">
+                    <img src="assets/img/logo2.png" alt="" class="logos__img">
+                </div>
+
+            </div>
+
+
+
+        </section>
+    </main>
+
+    <!--==================== FOOTER ====================-->
+    <footer class="footer section">
+        <div class="shapeX shape__big"></div>
+        <div class="shapeX shape__small"></div>
+
+        <div class="footer__container container grid">
+            <div class="footer__content">
+                <a href="#" class="footer__logo">
+                    <img src="../logo.png" alt="" class="loogo" style="height: 58px;">
+                    CarGo
+                </a>
+                <p class="footer__description">
+                    نحن نقدم أفضل السيارات من <br>
+                     <br>
+                     العلامات التجارية الأكثر شهرة في
+                     العالم.
+                </p>
+            </div>
+
+
+            <div class="footer__content">
+
+                <h3 class="footer__title">Company </h3>
+
+                <ul class="footer__links">
+                    <li>
+                        <a href="#" class="footer__links">About</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__links">Cars</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__links">History</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__links">Shop</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__links"></a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer__content">
+                <h3 class="footer__title">Information </h3>
+                <ul class="footer__links">
+                    <li>
+                        <a href="#" class="footer__links">Request a quote</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__links">Find a dealer</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__links">Contact us</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__links">Services</a>
+                    </li>
+
+                </ul>
+            </div>
+
+            <div class="footer__content">
+                <h3 class="footer__title"> تابعنا على  </h3>
+
+                <ul class="footer__social">
+                    <a href="" target="_blank" class="footer__social-link">
+                        <i class="ri-facebook-fill"></i>
+                    </a>
+                    <a href="" target="_blank" class="footer__social-link">
+                        <i class="ri-instagram-line"></i>
+                    </a>
+                    <a href="" target="_blank" class="footer__social-link">
+                        <i class="ri-twitter-line"></i>
+                    </a>
+                </ul>
+            </div>
+        </div>
+        <span class="footer__copy">
+            &#169; <a target="_blank" href="abdullahmoin.web.app" class="footer__dev-link">onlineHost.</a> All rigths
+            reserved
+            <p id="date"></p>
+        </span>
+    </footer>
+
+
+    <!--========== SCROLL UP ==========-->
+
+    <a href="" class="scrollup" id="scroll-up">
+        <i class="ri-arrow-up-s-line"></i>
+    </a>
+
+<!-- <a href="https://wa.me/+201228003700" title="Chat with us on WhatsApp" style="
+height: 42px; min-width: 42px;position: fixed !important; bottom: 10px; right: 20px; z-index: 999999999 !important; background-color: #00E785;
+    box-shadow: 4px 5px 10px rgba(0, 0, 0, 0.4); border-radius: 100px" >
+  <svg width="42" height="42" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_1024_354)"><path d="M23.8759 4.06939C21.4959 1.68839 18.3316 0.253548 14.9723 0.0320463C11.613 -0.189455 8.28774 0.817483 5.61565 2.86535C2.94357 4.91323 1.10682 7.86244 0.447451 11.1638C-0.21192 14.4652 0.351026 17.8937 2.03146 20.8109L0.0625 28.0004L7.42006 26.0712C9.45505 27.1794 11.7353 27.7601 14.0524 27.7602H14.0583C16.8029 27.7599 19.4859 26.946 21.768 25.4212C24.0502 23.8965 25.829 21.7294 26.8798 19.1939C27.9305 16.6583 28.206 13.8682 27.6713 11.1761C27.1367 8.48406 25.8159 6.01095 23.8759 4.06939ZM14.0583 25.4169H14.0538C11.988 25.417 9.96008 24.8617 8.1825 23.8091L7.7611 23.5593L3.3945 24.704L4.56014 20.448L4.28546 20.0117C2.92594 17.8454 2.32491 15.2886 2.57684 12.7434C2.82877 10.1982 3.91938 7.80894 5.67722 5.95113C7.43506 4.09332 9.76045 2.87235 12.2878 2.48017C14.8152 2.08799 17.4013 2.54684 19.6395 3.78457C21.8776 5.02231 23.641 6.96875 24.6524 9.3179C25.6638 11.6671 25.8659 14.2857 25.2268 16.7622C24.5877 19.2387 23.1438 21.4326 21.122 22.999C19.1001 24.5655 16.6151 25.4156 14.0575 25.4157L14.0583 25.4169Z" fill="#E0E0E0"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M10.6291 7.98363C10.3723 7.41271 10.1019 7.40123 9.85771 7.39143C9.65779 7.38275 9.42903 7.38331 9.20083 7.38331C9.0271 7.3879 8.8562 7.42837 8.69887 7.5022C8.54154 7.57602 8.40119 7.68159 8.28663 7.81227C7.899 8.17929 7.59209 8.62305 7.38547 9.11526C7.17884 9.60747 7.07704 10.1373 7.08655 10.6711C7.08655 12.3578 8.31519 13.9877 8.48655 14.2164C8.65791 14.4452 10.8581 18.0169 14.3425 19.3908C17.2382 20.5327 17.8276 20.3056 18.4562 20.2485C19.0848 20.1913 20.4843 19.4194 20.7701 18.6189C21.056 17.8183 21.0557 17.1323 20.9701 16.989C20.8844 16.8456 20.6559 16.7605 20.3129 16.5889C19.9699 16.4172 18.2849 15.5879 17.9704 15.4736C17.656 15.3594 17.4275 15.3023 17.199 15.6455C16.9705 15.9888 16.3139 16.7602 16.1137 16.9895C15.9135 17.2189 15.7136 17.2471 15.3709 17.0758C14.3603 16.6729 13.4275 16.0972 12.6143 15.3745C11.8648 14.6818 11.2221 13.8819 10.7072 13.0007C10.5073 12.6579 10.6857 12.472 10.8579 12.3007C11.0119 12.1472 11.2006 11.9005 11.3722 11.7003C11.5129 11.5271 11.6282 11.3346 11.7147 11.1289C11.7603 11.0343 11.7817 10.9299 11.7768 10.825C11.7719 10.7201 11.7409 10.6182 11.6867 10.5283C11.6001 10.3566 10.9337 8.66151 10.6291 7.98363Z" fill="white"></path><path d="M23.7628 4.02445C21.4107 1.66917 18.2825 0.249336 14.9611 0.0294866C11.6397 -0.190363 8.35161 0.804769 5.70953 2.82947C3.06745 4.85417 1.25154 7.77034 0.600156 11.0346C-0.051233 14.299 0.506321 17.6888 2.16894 20.5724L0.222656 27.6808L7.49566 25.7737C9.50727 26.8692 11.7613 27.4432 14.0519 27.4434H14.0577C16.7711 27.4436 19.4235 26.6392 21.6798 25.1321C23.936 23.6249 25.6947 21.4825 26.7335 18.9759C27.7722 16.4693 28.0444 13.711 27.5157 11.0497C26.9869 8.38835 25.6809 5.94358 23.7628 4.02445ZM14.0577 25.1269H14.0547C12.0125 25.1271 10.0078 24.5782 8.25054 23.5377L7.8339 23.2907L3.51686 24.4222L4.66906 20.2143L4.39774 19.7831C3.05387 17.6415 2.4598 15.1141 2.70892 12.598C2.95804 10.082 4.03622 7.72013 5.77398 5.88366C7.51173 4.04719 9.81051 2.84028 12.3089 2.45266C14.8074 2.06505 17.3638 2.5187 19.5763 3.74232C21.7888 4.96593 23.5319 6.89011 24.5317 9.21238C25.5314 11.5346 25.7311 14.1233 25.0993 16.5714C24.4675 19.0195 23.0401 21.1883 21.0414 22.7367C19.0427 24.2851 16.5861 25.1254 14.0577 25.1255V25.1269Z" fill="white"></path></g><defs><clipPath id="clip0_1024_354"><rect width="27.8748" height="28" fill="white" transform="translate(0.0625)"></rect></clipPath></defs></svg>
+</a> -->
+<!-- wpp-btn-mobile -->
+<div class="phone-call cbh-phone cbh-green cbh-show  cbh-static" id="clbh_phone_div" style=""><a id="WhatsApp-button" href="https://wa.me/5521980619913" target="_blank" class="phoneJs" title="WhatsApp 360imagem"><div class="cbh-ph-circle"></div><div class="cbh-ph-circle-fill"></div><div class="cbh-ph-img-circle1"></div></a></div>
+<!-- wpp-btn-mobile -->
+    <!--=============== SCROLL REVEAL - PAGE ANNIMATION ===============-->
+    <script src="assets/js/scrollrevealAnimation.min.js"></script>
+
+    <!--=============== SWIPER JS - PRODUCT SLIDER ===============-->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+
+    <!--=============== MIXITUP JS - FILTER PRODUCT ===============-->
+    <script src="assets/js/mixitup.min.js"></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="assets/js/main.js"></script>
+
+
+
+</body>
+
+
+
+</html>
