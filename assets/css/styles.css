@@ -625,6 +625,7 @@ transform: scale(1.2);
 .features__card-title{
   font-size: var(--h3-font-size);
   margin-bottom: 0.25rem;
+  color: #ca1919;
 
 }
 .features__card-description{
@@ -829,6 +830,7 @@ transform: scale(1.2);
 .logos__img:hover{
   opacity: 1;
   cursor: pointer;
+  background-color: #4c0f0f;
 }
 
 /*=============== FOOTER ===============*/
@@ -836,6 +838,7 @@ transform: scale(1.2);
 .footer{
   position: relative;
   overflow: hidden;
+  background-color: indigo;
 }
 .footer .shape__big,
 .footer .shape__small{
@@ -884,6 +887,7 @@ transform: scale(1.2);
   display: flex;
   flex-direction: column;
   row-gap: .5rem;
+  color: white;
 
 }
 .footer__link,
@@ -1199,6 +1203,6 @@ transform: scale(1.2);
   }
 
   .scrollup{
-    right: 2.8rem;
+    /* right: 2.8rem; */
   }
 }
