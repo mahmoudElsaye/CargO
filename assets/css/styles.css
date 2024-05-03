@@ -272,7 +272,7 @@ padding-top: 9rem;
 
 }
 .home__img{
-  width: 280px;
+  width: 100%;
   justify-self: center;
   
 
@@ -328,6 +328,7 @@ padding-top: 9rem;
   font-size: var(--small-font-size);
   color: var(--white-color);
   font-weight: var(--font-medium);
+  margin: auto;
 }
 
 .home__button::before{
@@ -357,7 +358,7 @@ padding-top: 9rem;
 .home__social-icon{
   color: #fff;
   font-size: 1.4em;
-  visibility: hidden !important;
+  /* visibility: hidden !important; */
 }
 .home__social-icon:hover{
   color: var(--first-color);
@@ -1053,7 +1054,7 @@ transform: scale(1.2);
     padding-top: 2rem;
   }
   .home__img{
-    width: 380px;
+    width: 100%;
   }
   .home__car{
     column-gap: 10rem;
