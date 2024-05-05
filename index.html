@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!--=============== FAVICON ===============-->
-    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon" class="favicon">
+    <link rel="shortcut icon" href="assets/img/logo.png" type="image/x-icon" class="favicon">
 
     <!--=============== REMIX ICONS ===============-->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
@@ -61,7 +61,7 @@
   .cbh-phone.cbh-green .cbh-ph-circle-fill{background-color:rgba(0,175,242,.5);opacity:.75!important}
   .cbh-phone.cbh-gray.cbh-hover .cbh-ph-circle-fill{background-color:rgba(204,204,204,.5);opacity:.75!important}
   .cbh-phone.cbh-gray .cbh-ph-circle-fill{background-color:rgba(117,235,80,.5);opacity:1!important}
-  .cbh-ph-img-circle1{width:50px;height:50px;top:70px;left:70px;position:absolute;background-image:url(https://360imagem.com/google/images/wpp-icon.png);background-size: 40px 40px;background-color:rgba(30,30,30,.1);background-position:center center;background-repeat:no-repeat;-webkit-border-radius:100%;-moz-border-radius:100%;border-radius:100%;border:2px solid transparent;opacity:1;-webkit-animation:cbh-circle-img-anim 1s infinite ease-in-out;-moz-animation:cbh-circle-img-anim 1s infinite ease-in-out;-ms-animation:cbh-circle-img-anim 1s infinite ease-in-out;-o-animation:cbh-circle-img-anim 1s infinite ease-in-out;animation:cbh-circle-img-anim 1s infinite ease-in-out}
+  .cbh-ph-img-circle1{width:50px;height:50px;top:70px;left:70px;position:absolute;background-image:url(assets/img/WhatsApp_icon.png.webp);background-size: 40px 40px;background-color:rgba(30,30,30,.1);background-position:center center;background-repeat:no-repeat;-webkit-border-radius:100%;-moz-border-radius:100%;border-radius:100%;border:2px solid transparent;opacity:1;-webkit-animation:cbh-circle-img-anim 1s infinite ease-in-out;-moz-animation:cbh-circle-img-anim 1s infinite ease-in-out;-ms-animation:cbh-circle-img-anim 1s infinite ease-in-out;-o-animation:cbh-circle-img-anim 1s infinite ease-in-out;animation:cbh-circle-img-anim 1s infinite ease-in-out}
   .cbh-phone.cbh-active .cbh-ph-img-circle1{-webkit-animation:cbh-circle-img-anim 1s infinite ease-in-out!important;-moz-animation:cbh-circle-img-anim 1s infinite ease-in-out!important;-ms-animation:cbh-circle-img-anim 1s infinite ease-in-out!important;-o-animation:cbh-circle-img-anim 1s infinite ease-in-out!important;animation:cbh-circle-img-anim 1s infinite ease-in-out!important}
   .cbh-phone.cbh-static .cbh-ph-img-circle1{-webkit-animation:cbh-circle-img-anim 0s infinite ease-in-out!important;-moz-animation:cbh-circle-img-anim 0s infinite ease-in-out!important;-ms-animation:cbh-circle-img-anim 0s infinite ease-in-out!important;-o-animation:cbh-circle-img-anim 0s infinite ease-in-out!important;animation:cbh-circle-img-anim 0s infinite ease-in-out!important}
   .cbh-phone.cbh-hover .cbh-ph-img-circle1{background-color:rgba(0,175,242,1)}
@@ -129,8 +129,7 @@
         <nav class="nav container">
             <a href="" class="nav__logo">
                 <!-- <i class="ri-steering-fill"></i> -->
-                <img src="assets/img/logo.png" alt="" class="loogo" style="height: 58px;">
-                CarGo
+                <img src="assets/img/logo.png" alt="" class="loogo" style="height: 90px;">
             </a>
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list">
@@ -163,7 +162,7 @@
 
     <!--************* MAIN CODE ****************-->
 
-    <main class="main">
+    <main class="main" style="background-color: #d5c5c529;">
         <!--==================== HOME ====================-->
         <section class="home section" id="home">
             <div class="shapeX shape__big"></div>
@@ -171,28 +170,34 @@
 
 
             <div class="home__container container grid">
-                <div class="home__data">
+                <div class="home__data" style="margin-left: 70px;font-family: monospace;">
                     <h1 class="home__title">
                       كارجو لخدمات
                     </h1>
                     <h2 class="home__subtitle">
                        الليموزين
-                       <i class="ri-flashlight-fill"></i>
+                       <!-- <i class="ri-flashlight-fill"></i> -->
                     </h2>
                     <!-- <h3 class="home__elec">
                         <i class="ri-flashlight-fill"></i>
                         
                     </h3> -->
+                    <p style="
+    font-size: 21px;
+    text-align: end;
+    margin-right: 14px;
+    color: white;
+">جميع خدمات الليموزين فى مصر</p>
                 </div>
 
-                <img src="https://media.safarway.com/content/7f94017d-f735-4b36-bde3-183c525220ec_lg.jpg" alt="" class="home__img">
-                <div class="top-right" style="
+                <!-- <img src="https://media.safarway.com/content/7f94017d-f735-4b36-bde3-183c525220ec_lg.jpg" alt="" class="home__img"> -->
+                <!-- <div class="top-right" style="
                 position: absolute;
                 top: 198px;
                 right: 16px;
                 font-size: 30px;
                 color: #336a8b;margin-bottom: 2rem;
-            ">كار جو ليموزين</div>
+            "> جو </div> -->
             </div>
                 <!-- <div class="home__car">
                     <div class="home__car-data">
@@ -222,11 +227,16 @@
                     </div>
 
                 </div> -->
+                <img alt="" class="home__img">
                 
-                <p style="text-align: right;font-size: 25px;margin-bottom: 2rem;"> جميع خدمات الليموزين في مصر</p>
+                <p style="text-align: center;font-size: 19px;margin-bottom: 2rem;margin-top: 2rem;
+                color: white;">.. نقدم جميع خدمات الليموزين الي<br> مطار القاهرة <br> مطار اسفنكس <br> مطار برج العرب </p>
                 <br><br>
 
-                <a href="#" class="home__button">START</a>
+                <a href="tel:+201228003700" class="home__button">
+                    <i class="fa fa-phone" aria-hidden="true" style="color: chartreuse;font-size: 43px;"></i>
+                </a>
+                
 
                 <div class="slider__bg">
                 <div class="slider__bg-navBtn active"></div>
@@ -358,12 +368,12 @@ font-size: 26px;
                     <article class="popular__card swiper-slide" style="margin-right: 24px;">
                         <div class="shapeX shape__smaller"></div>
 
-                        <h1 class="popular__title">mercedes</h1>
-                        <h3 class="popular__subtitle">Turbo S</h3>
+                        <h1 class="popular__title">Hyundai</h1>
+                        <h3 class="popular__subtitle">Elantra CN7</h3>
 
-                        <img src="assets/img/17097b38-77ce-462c-bcf1-5cfee3085886.jpg" alt="" class="popular__img">
+                        <img src="assets/img/hyundai-cn7.png" alt="" class="popular__img" style="margin-top: 75px;">
 
-                        <div class="popular__data">
+                        <!-- <div class="popular__data">
                             <div class="popular__data-group">
                                 <i class="ri-dashboard-2-line"></i> 3.7 sec
                             </div>
@@ -373,7 +383,7 @@ font-size: 26px;
                             <div class="popular__data-group">
                                 <i class="ri-charging-pile-2-line"></i> Electric
                             </div>
-                        </div>
+                        </div> -->
 
                         <!-- <h3 class="popular__price">$175,900</h3> -->
                         <button class="button popular__button">
@@ -385,12 +395,12 @@ font-size: 26px;
                     <article class="popular__card swiper-slide" style="margin-right: 24px;">
                         <div class="shapeX shape__smaller"></div>
 
-                        <h1 class="popular__title">BMW</h1>
-                        <h3 class="popular__subtitle">Taycan</h3>
+                        <h1 class="popular__title">toyota</h1>
+                        <h3 class="popular__subtitle">corolla</h3>
 
-                        <img src="assets/img/214df1bf-c139-4fdd-9b5c-9ab15ac8458e.jpg" alt="" class="popular__img">
+                        <img src="assets/img/toyota-corolla.png" alt="" class="popular__img" style="margin-top: 75px;">
 
-                        <div class="popular__data">
+                        <!-- <div class="popular__data">
                             <div class="popular__data-group">
                                 <i class="ri-dashboard-2-line"></i> 3.7 sec
                             </div>
@@ -400,9 +410,9 @@ font-size: 26px;
                             <div class="popular__data-group">
                                 <i class="ri-charging-pile-2-line"></i> Electric
                             </div>
-                        </div>
+                        </div> -->
 
-                        <h3 class="popular__price">$114,900</h3>
+                        <!-- <h3 class="popular__price">$114,900</h3> -->
                         <button class="button popular__button">
                             <i class="ri-shopping-bag-2-line"></i>
                         </button>
@@ -412,12 +422,12 @@ font-size: 26px;
                     <article class="popular__card swiper-slide" style="margin-right: 24px;">
                         <div class="shapeX shape__smaller"></div>
 
-                        <h1 class="popular__title">هيونداي</h1>
-                        <h3 class="popular__subtitle">Turbo S Cross</h3>
+                        <h1 class="popular__title">Mitsubishi</h1>
+                        <h3 class="popular__subtitle">Xpander</h3>
 
-                        <img src="assets/img/popular3.png" alt="" class="popular__img">
+                        <img src="assets/img/mitsubishi-xpander.png" alt="" class="popular__img" style="margin-top: 75px;">
 
-                        <div class="popular__data">
+                        <!-- <div class="popular__data">
                             <div class="popular__data-group">
                                 <i class="ri-dashboard-2-line"></i> 3.7 sec
                             </div>
@@ -427,9 +437,9 @@ font-size: 26px;
                             <div class="popular__data-group">
                                 <i class="ri-charging-pile-2-line"></i> Electric
                             </div>
-                        </div>
+                        </div> -->
 
-                        <h3 class="popular__price">$150,900</h3>
+                        <!-- <h3 class="popular__price">$150,900</h3> -->
                         <button class="button popular__button">
                             <i class="ri-shopping-bag-2-line"></i>
                         </button>
@@ -439,12 +449,12 @@ font-size: 26px;
                     <article class="popular__card swiper-slide" style="margin-right: 24px;">
                         <div class="shapeX shape__smaller"></div>
 
-                        <h1 class="popular__title">تيوتا</h1>
-                        <h3 class="popular__subtitle">Boxster 718</h3>
+                        <h1 class="popular__title">Hyundai</h1>
+                        <h3 class="popular__subtitle">H1</h3>
 
-                        <img src="assets/img/popular4.png" alt="" class="popular__img">
+                        <img src="assets/img/honda-h1.png" alt="" class="popular__img" style="margin-top: 75px;">
 
-                        <div class="popular__data">
+                        <!-- <div class="popular__data">
                             <div class="popular__data-group">
                                 <i class="ri-dashboard-2-line"></i> 3.7 sec
                             </div>
@@ -454,9 +464,9 @@ font-size: 26px;
                             <div class="popular__data-group">
                                 <i class="ri-charging-pile-2-line"></i> Electric
                             </div>
-                        </div>
+                        </div> -->
 
-                        <h3 class="popular__price">$125,900</h3>
+                        <!-- <h3 class="popular__price">$125,900</h3> -->
                         <button class="button popular__button">
                             <i class="ri-shopping-bag-2-line"></i>
                         </button>
@@ -466,12 +476,12 @@ font-size: 26px;
                     <article class="popular__card swiper-slide">
                         <div class="shapeX shape__smaller"></div>
 
-                        <h1 class="popular__title">شيفورلية</h1>
-                        <h3 class="popular__subtitle">Cayman</h3>
+                        <h1 class="popular__title">Toyota</h1>
+                        <h3 class="popular__subtitle">Hi S</h3>
 
-                        <img src="assets/img/popular5.png" alt="" class="popular__img">
+                        <img src="assets/img/toyota-hi-s.png" alt="" class="popular__img" style="margin-top: 75px;">
 
-                        <div class="popular__data">
+                        <!-- <div class="popular__data">
                             <div class="popular__data-group">
                                 <i class="ri-dashboard-2-line"></i> 3.7 sec
                             </div>
@@ -481,9 +491,9 @@ font-size: 26px;
                             <div class="popular__data-group">
                                 <i class="ri-charging-pile-2-line"></i> Electric
                             </div>
-                        </div>
+                        </div> -->
 
-                        <h3 class="popular__price">$128,900</h3>
+                        <!-- <h3 class="popular__price">$128,900</h3> -->
                         <button class="button popular__button">
                             <i class="ri-shopping-bag-2-line"></i>
                         </button>
@@ -532,24 +542,24 @@ font-size: 26px;
             <h2 class="section__title">سيارات فاخرة مميزة</h2>
             <div class="featured__container container">
                 <ul class="featured__filters">
-                    <li>
+                    <!-- <li>
                         <button class="featured__item active-featured" data-filter="all">
                             <span>الجميع</span>
                         </button>
-                    </li>
+                    </li> -->
                     <li>
-                        <button class="featured__item" data-filter=".tesla">
+                        <button class="featured__item" data-filter="">
                             <img src="assets/img/logo3.png" alt="">
 
                         </button>
                     </li>
                     <li>
-                        <button class="featured__item" data-filter=".audi">
+                        <button class="featured__item" data-filter="">
                             <img src="assets/img/logo2.png" alt="">
                         </button>
                     </li>
                     <li>
-                        <button class="featured__item" data-filter=".porsche">
+                        <button class="featured__item" data-filter="">
                             <img src="assets/img/logo1.png" alt="">
                         </button>
                     </li>
@@ -561,8 +571,8 @@ font-size: 26px;
                         <div class="shape shape__smaller"></div>
 
                         <h1 class="featured__title">mercedes</h1>
-                        <h3 class="featured__subtitle">Model X</h3>
-                        <img src="assets/img/featured1.png" alt="" class="featured__img">
+                        <h3 class="featured__subtitle">S500</h3>
+                        <img src="assets/img/mercedes-s500.png" alt="" class="featured__img" style="margin-bottom: 4rem;">
                         <!-- <h3 class="featured__price">$98,900</h3> -->
                         <button class="button featured__button">
                             <i class="ri-shopping-bag-2-line"></i>
@@ -572,9 +582,9 @@ font-size: 26px;
                     <article class="featured__card mix tesla">
                         <div class="shape shape__smaller"></div>
 
-                        <h1 class="featured__title">BMW</h1>
-                        <h3 class="featured__subtitle">Model 3</h3>
-                        <img src="assets/img/featured2.png" alt="" class="featured__img">
+                        <h1 class="featured__title">mercedes</h1>
+                        <h3 class="featured__subtitle">E200 3</h3>
+                        <img src="assets/img/mrcedes-e200.png" alt="" class="featured__img" style="margin-bottom: 4rem;">
                         <!-- <h3 class="featured__price">$45,900</h3> -->
                         <button class="button featured__button">
                             <i class="ri-shopping-bag-2-line"></i>
@@ -584,9 +594,9 @@ font-size: 26px;
                     <article class="featured__card mix audi">
                         <div class="shape shape__smaller"></div>
 
-                        <h1 class="featured__title">Audi</h1>
-                        <h3 class="featured__subtitle">E-tron</h3>
-                        <img src="assets/img/featured3.png" alt="" class="featured__img">
+                        <h1 class="featured__title">mercedes</h1>
+                        <h3 class="featured__subtitle">C180</h3>
+                        <img src="assets/img/mercedes-c180.png" alt="" class="featured__img" style="margin-bottom: 4rem;">
                         <!-- <h3 class="featured__price">$175,900</h3> -->
                         <button class="button featured__button">
                             <i class="ri-shopping-bag-2-line"></i>
@@ -596,9 +606,9 @@ font-size: 26px;
                     <article class="featured__card mix porsche">
                         <div class="shape shape__smaller"></div>
 
-                        <h1 class="featured__title">Porsche</h1>
-                        <h3 class="featured__subtitle">Boxster 987</h3>
-                        <img src="assets/img/featured4.png" alt="" class="featured__img">
+                        <h1 class="featured__title">range Rover</h1>
+                        <h3 class="featured__subtitle"></h3>
+                        <img src="assets/img/range-rover.png" alt="" class="featured__img" style="margin-bottom: 4rem;">
                         <!-- <h3 class="featured__price">$126,900</h3> -->
                         <button class="button featured__button">
                             <i class="ri-shopping-bag-2-line"></i>
@@ -608,9 +618,9 @@ font-size: 26px;
                     <article class="featured__card mix porsche">
                         <div class="shape shape__smaller"></div>
 
-                        <h1 class="featured__title">Porsche</h1>
-                        <h3 class="featured__subtitle">Panamera</h3>
-                        <img src="assets/img/featured5.png" alt="" class="featured__img">
+                        <h1 class="featured__title">mercedes</h1>
+                        <h3 class="featured__subtitle">V250</h3>
+                        <img src="assets/img/mercedes-v250.png" alt="" class="featured__img" style="margin-bottom: 4rem;">
                         <!-- <h3 class="featured__price">$175,900</h3> -->
                         <button class="button featured__button">
                             <i class="ri-shopping-bag-2-line"></i>
@@ -641,7 +651,9 @@ font-size: 26px;
 
 </p>
 
-                    <a href="#" class="button"> إشترك الان</a>
+<a href="mailto:info@cargolemousien.com" class="home__button" data-sr-id="9" style="visibility: visible; opacity: 1; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transition: opacity 2.5s cubic-bezier(0.5, 0, 0, 1) 1s, transform 2.5s cubic-bezier(0.5, 0, 0, 1) 1s;">
+    <i class="fa fa-envelope" aria-hidden="true" style="color: cadetblue;font-size: 43px;"></i>
+</a>
                 </div>
 
                 <img src="assets/img/offer.png" alt="" class="offer__img">
@@ -731,13 +743,13 @@ font-size: 26px;
                     <li>
                         <i class="fa fa-whatsapp" aria-hidden="true" style="color: chartreuse;font-size: 20px;"></i>
 
-                        <a href="https://wa.me/+01228003700" class="footer-link">
-                        <span class="span" style="color: white;">  +01228003700</span>
+                        <a href="https://wa.me/+201228003700" class="footer-link">
+                        <span class="span" style="color: white;">  +201228003700</span>
                     </a></li>
                     <li>
                         <i class="fa fa-phone" aria-hidden="true" style="color: chartreuse;font-size: 20px;"></i>
-                        <a href="tel:+01228003700" class="footer-link">
-                            <span class="span" style="color: white;">  +01228003700</span></a>
+                        <a href="tel:+201228003700" class="footer-link">
+                            <span class="span" style="color: white;">  +201228003700</span></a>
 
                     </li>
                     <li>
@@ -805,13 +817,13 @@ font-size: 26px;
         <i class="ri-arrow-up-s-line"></i>
     </a>
 
-<!-- <a href="https://wa.me/+201228003700" title="Chat with us on WhatsApp" style="
+<!-- <a href="https://wa.me/+2201228003700" title="Chat with us on WhatsApp" style="
 height: 42px; min-width: 42px;position: fixed !important; bottom: 10px; right: 20px; z-index: 999999999 !important; background-color: #00E785;
     box-shadow: 4px 5px 10px rgba(0, 0, 0, 0.4); border-radius: 100px" >
   <svg width="42" height="42" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_1024_354)"><path d="M23.8759 4.06939C21.4959 1.68839 18.3316 0.253548 14.9723 0.0320463C11.613 -0.189455 8.28774 0.817483 5.61565 2.86535C2.94357 4.91323 1.10682 7.86244 0.447451 11.1638C-0.21192 14.4652 0.351026 17.8937 2.03146 20.8109L0.0625 28.0004L7.42006 26.0712C9.45505 27.1794 11.7353 27.7601 14.0524 27.7602H14.0583C16.8029 27.7599 19.4859 26.946 21.768 25.4212C24.0502 23.8965 25.829 21.7294 26.8798 19.1939C27.9305 16.6583 28.206 13.8682 27.6713 11.1761C27.1367 8.48406 25.8159 6.01095 23.8759 4.06939ZM14.0583 25.4169H14.0538C11.988 25.417 9.96008 24.8617 8.1825 23.8091L7.7611 23.5593L3.3945 24.704L4.56014 20.448L4.28546 20.0117C2.92594 17.8454 2.32491 15.2886 2.57684 12.7434C2.82877 10.1982 3.91938 7.80894 5.67722 5.95113C7.43506 4.09332 9.76045 2.87235 12.2878 2.48017C14.8152 2.08799 17.4013 2.54684 19.6395 3.78457C21.8776 5.02231 23.641 6.96875 24.6524 9.3179C25.6638 11.6671 25.8659 14.2857 25.2268 16.7622C24.5877 19.2387 23.1438 21.4326 21.122 22.999C19.1001 24.5655 16.6151 25.4156 14.0575 25.4157L14.0583 25.4169Z" fill="#E0E0E0"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M10.6291 7.98363C10.3723 7.41271 10.1019 7.40123 9.85771 7.39143C9.65779 7.38275 9.42903 7.38331 9.20083 7.38331C9.0271 7.3879 8.8562 7.42837 8.69887 7.5022C8.54154 7.57602 8.40119 7.68159 8.28663 7.81227C7.899 8.17929 7.59209 8.62305 7.38547 9.11526C7.17884 9.60747 7.07704 10.1373 7.08655 10.6711C7.08655 12.3578 8.31519 13.9877 8.48655 14.2164C8.65791 14.4452 10.8581 18.0169 14.3425 19.3908C17.2382 20.5327 17.8276 20.3056 18.4562 20.2485C19.0848 20.1913 20.4843 19.4194 20.7701 18.6189C21.056 17.8183 21.0557 17.1323 20.9701 16.989C20.8844 16.8456 20.6559 16.7605 20.3129 16.5889C19.9699 16.4172 18.2849 15.5879 17.9704 15.4736C17.656 15.3594 17.4275 15.3023 17.199 15.6455C16.9705 15.9888 16.3139 16.7602 16.1137 16.9895C15.9135 17.2189 15.7136 17.2471 15.3709 17.0758C14.3603 16.6729 13.4275 16.0972 12.6143 15.3745C11.8648 14.6818 11.2221 13.8819 10.7072 13.0007C10.5073 12.6579 10.6857 12.472 10.8579 12.3007C11.0119 12.1472 11.2006 11.9005 11.3722 11.7003C11.5129 11.5271 11.6282 11.3346 11.7147 11.1289C11.7603 11.0343 11.7817 10.9299 11.7768 10.825C11.7719 10.7201 11.7409 10.6182 11.6867 10.5283C11.6001 10.3566 10.9337 8.66151 10.6291 7.98363Z" fill="white"></path><path d="M23.7628 4.02445C21.4107 1.66917 18.2825 0.249336 14.9611 0.0294866C11.6397 -0.190363 8.35161 0.804769 5.70953 2.82947C3.06745 4.85417 1.25154 7.77034 0.600156 11.0346C-0.051233 14.299 0.506321 17.6888 2.16894 20.5724L0.222656 27.6808L7.49566 25.7737C9.50727 26.8692 11.7613 27.4432 14.0519 27.4434H14.0577C16.7711 27.4436 19.4235 26.6392 21.6798 25.1321C23.936 23.6249 25.6947 21.4825 26.7335 18.9759C27.7722 16.4693 28.0444 13.711 27.5157 11.0497C26.9869 8.38835 25.6809 5.94358 23.7628 4.02445ZM14.0577 25.1269H14.0547C12.0125 25.1271 10.0078 24.5782 8.25054 23.5377L7.8339 23.2907L3.51686 24.4222L4.66906 20.2143L4.39774 19.7831C3.05387 17.6415 2.4598 15.1141 2.70892 12.598C2.95804 10.082 4.03622 7.72013 5.77398 5.88366C7.51173 4.04719 9.81051 2.84028 12.3089 2.45266C14.8074 2.06505 17.3638 2.5187 19.5763 3.74232C21.7888 4.96593 23.5319 6.89011 24.5317 9.21238C25.5314 11.5346 25.7311 14.1233 25.0993 16.5714C24.4675 19.0195 23.0401 21.1883 21.0414 22.7367C19.0427 24.2851 16.5861 25.1254 14.0577 25.1255V25.1269Z" fill="white"></path></g><defs><clipPath id="clip0_1024_354"><rect width="27.8748" height="28" fill="white" transform="translate(0.0625)"></rect></clipPath></defs></svg>
 </a> -->
 <!-- wpp-btn-mobile -->
-<div class="phone-call cbh-phone cbh-green cbh-show  cbh-static" id="clbh_phone_div" style=""><a id="WhatsApp-button" href="https://wa.me/+01228003700" target="_blank" class="phoneJs" title="WhatsApp 360imagem"><div class="cbh-ph-circle"></div><div class="cbh-ph-circle-fill"></div><div class="cbh-ph-img-circle1"></div></a></div>
+<div class="phone-call cbh-phone cbh-green cbh-show  cbh-static" id="clbh_phone_div" style=""><a id="WhatsApp-button" href="https://wa.me/+201228003700" target="_blank" class="phoneJs" title="WhatsApp 360imagem"><div class="cbh-ph-circle"></div><div class="cbh-ph-circle-fill"></div><div class="cbh-ph-img-circle1"></div></a></div>
 <!-- wpp-btn-mobile -->
     <!--=============== SCROLL REVEAL - PAGE ANNIMATION ===============-->
     <script src="assets/js/scrollrevealAnimation.min.js"></script>
