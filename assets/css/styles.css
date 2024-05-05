@@ -91,8 +91,8 @@ img {
 /*=============== MY REUSABLE CSS CLASSES ===============*/
 .container {
   max-width: 1024px;
-  margin-right: 1.5rem;
-  margin-left: 1.5rem;
+  /* margin-right: 1.5rem;
+  margin-left: 1.5rem; */
 }
 
 .grid {
@@ -165,6 +165,7 @@ img {
   column-gap: .5rem;
   font-weight: var(--font-medium);
   transition: .3s;
+  margin-left: 1.5rem;
 }
 .nav__logo i{
 font-size: 1.25rem;
@@ -175,6 +176,7 @@ font-size: 1.25rem;
 .nav__toggle{
   font-size: 1.25rem;
   cursor: pointer;
+  margin-right:1.5rem ;
 }
 @media screen and (max-width: 767px) {
   .nav__menu{
@@ -244,19 +246,27 @@ padding-top: 9rem;
 }
 .home__container{
   position: relative;
-  padding-top: 4rem;
-  row-gap: 3rem;
+  padding-top: 1rem;
+  row-gap: 7rem;
 }
 .home__data{
-  text-align: center;
+  /* text-align: center; */
 }
 .home__title{
-  font-size: var(--h1-font-size);
-  margin-bottom: 1rem;
+  /* font-size: var(--h1-font-size); */ 
+    margin-bottom: 5px;
+    font-family: system-ui;
+    font-size: 37px;
+    color: #c49d39a8;
 }
 .home__subtitle{
-  font-size: var(--h3-font-size);
-  margin-bottom: .25rem;
+  /* font-size: var(--h3-font-size); */
+  margin-bottom: 5rem;
+  /* margin-bottom: 1rem; */
+    font-family: 'FontAwesome';
+    font-size: 37px;
+    color: #c49d39a8;
+    margin-left: 90px;
 }
 .home__elec{
   font-size: var(--small-font-size);
@@ -274,6 +284,10 @@ padding-top: 9rem;
 .home__img{
   width: 100%;
   justify-self: center;
+  height: 310px;
+  margin-top: 2rem;
+  background-size: 100% 100%;
+    background-image: url(https://media.safarway.com/content/7f94017d-f735-4b36-bde3-183c525220ec_lg.jpg);
   
 
 }
@@ -348,7 +362,7 @@ padding-top: 9rem;
   z-index: 888;
   position: absolute;
   right: 30px;
-  top: 25rem;
+  top: 31rem;
   display: flex;
   gap: 1rem;
   flex-direction: column;
@@ -356,7 +370,7 @@ padding-top: 9rem;
   
 }
 .home__social-icon{
-  color: #fff;
+  color: #c73333;
   font-size: 1.4em;
   /* visibility: hidden !important; */
 }
@@ -527,9 +541,13 @@ transform: scale(1.2);
 
 }
 .popular__img{
-  width: 160px;
-  margin: .75rem 0 1.25rem 1.5rem;
+  width: 219px;
+  /* margin: .75rem 0 1.25rem 1.5rem; */
   transition: .3s;
+  margin-top: 15px;
+  margin-bottom: 45px;
+  height: 175px;
+  
 }
 .popular__data{
   display: grid;
@@ -858,6 +876,7 @@ transform: scale(1.2);
 .footer__container{
   row-gap: 2.5rem;
   position: relative;
+  text-align: center;
 }
 .footer__logo{
   display: inline-flex;
@@ -901,8 +920,9 @@ transform: scale(1.2);
   color: var(--title-color);
 }
 .footer__social{
-  display: flex;
+  display: inline-flex;
   column-gap: 1.5rem;
+  text-align: center;
 }
 .footer__social-link{
   font-size: 1.25rem;
