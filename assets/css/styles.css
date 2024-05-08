@@ -370,7 +370,7 @@ padding-top: 9rem;
   
 }
 .home__social-icon{
-  color: #c73333;
+  color: #a9aa29;
   font-size: 1.4em;
   /* visibility: hidden !important; */
 }
@@ -647,10 +647,21 @@ transform: scale(1.2);
   bottom: 2rem;
 
 }
+.mySlides {
+  display:none;
+  height: 250px;
+  max-width: 350px !important;
+  border-radius: 0 50px;
+}
+.who.are.we {
+  text-align: center;
+    max-width: 350px;
+    margin: auto;
+}
 .features__card-title{
   font-size: var(--h3-font-size);
   margin-bottom: 0.25rem;
-  color: #ca1919;
+  color: #d2d31e;
 
 }
 .features__card-description{
