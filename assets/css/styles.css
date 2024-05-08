@@ -254,7 +254,7 @@ padding-top: 9rem;
 }
 .home__title{
   /* font-size: var(--h1-font-size); */ 
-    margin-bottom: 5px;
+    /* margin-bottom: 5px; */
     font-family: system-ui;
     font-size: 37px;
     color: #c49d39a8;
@@ -370,7 +370,7 @@ padding-top: 9rem;
   
 }
 .home__social-icon{
-  color: #a9aa29;
+  color: #c49d39a8;
   font-size: 1.4em;
   /* visibility: hidden !important; */
 }
